@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+import App from './container/App/App';
+
+// Default base route for all the endpoints
+axios.defaults.baseURL = 'http://localhost:3000/api/v1/';
 
 ReactDOM.render(
   <React.StrictMode>
